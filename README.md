@@ -1,16 +1,31 @@
 # flutter_route_example
 
-A new Flutter project.
+### pubspec.yaml
+```yaml
+dependencies:
+    auto_route: ^5.0.1
 
-## Getting Started
+dev_dependencies:
+    build_runner: ^2.2.1
+    auto_route_generator: ^5.0.2
+```
 
-This project is a starting point for a Flutter application.
+```terminal              
+flutter packages pub run build_runner build              
+```    
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#
+- İçeriğin detay sayfasına gitmek için
+> 1: Detay sayfasının constructura gerekli parametre `@PathParam() required this.parametreAdi` şeklinde eklenir.
+
+> 2: router.dart içerisinde `path` parametresi `:parametreAdi` şeklinde verilir.
+
+> 3: bir nav_bar'dan başka bir nav_bar'a geçmeden aynı sayfaları görüntüleyebilmek için router.dart içinde ilgili nav_bar'lara aynı sayfa eklenir.
+
+#
+```
+context.router.push(ProfileDetailRoute(userId: "$index"));
+
+```
