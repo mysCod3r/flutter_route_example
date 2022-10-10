@@ -11,6 +11,7 @@ class NotificationsView extends StatelessWidget {
         return ListTile(
           leading: const Icon(Icons.notifications_outlined),
           title: Text("Notification $index"),
+          onTap: () {},
         );
       },
     );

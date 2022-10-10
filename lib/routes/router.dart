@@ -3,6 +3,7 @@ import 'package:auto_route/empty_router_widgets.dart';
 import 'package:flutter_route_example/view/notifications/notifications_view.dart';
 import 'package:flutter_route_example/view/profile/profile_detail_view.dart';
 import 'package:flutter_route_example/view/profile/profile_view.dart';
+import 'package:flutter_route_example/view/settings/settings_view.dart';
 import 'package:flutter_route_example/view/tweet/tweet_view.dart';
 import 'package:flutter_route_example/view/tweet/tweet_detail_view.dart';
 
@@ -54,8 +55,13 @@ import '../home_view.dart';
           name: "NotificationsRouter",
           page: NotificationsView,
         ),
+        AutoRoute(
+          path: "settings",
+          name: "SettingsRouter",
+          page: SettingsView,
+        ),
       ],
-    )
+    ),
   ],
 )
 class $AppRouter {}

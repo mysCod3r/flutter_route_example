@@ -19,9 +19,6 @@ class ProfileDetailView extends StatelessWidget {
         IconButton(
             onPressed: () {
               context.router.push(TweetDetailRoute(tweetId: "2"));
-              // context.router.push(
-              //     TweetRouter(children: [TweetDetailRoute(tweetId: "4")]));
-
               // context.navigateTo(
               //     TweetRouter(children: [TweetDetailRoute(tweetId: "4")]));
             },
